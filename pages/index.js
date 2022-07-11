@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import Image from 'next/image'
+import Avatar from '../Components/avatar';
 
 export default function Home() {
   return (
@@ -12,18 +12,20 @@ export default function Home() {
 
     {/*Header*/}
 
-    <header className="flex w-full p-5 justify-between">
+    <header className="flex w-full p-5 justify-between text-md text-gray-700">
 
       {/*Left*/}
       <div className='flex space-x-4 items-center'>
-          <p>About</p>
-          <p>Store</p>
+          <p className="link">About</p>
+          <p className="link">Store</p>
       </div>
 
       {/*Right*/}
       <div className='flex space-x-4 items-center'>
-        <p>Gmail</p>
-        <p>Images</p>
+        <p className="link">Gmail</p>
+        <p className="link">Images</p>
+
+        <Avatar url="https://github.com/chandran-jr.png" />
       </div>
     </header>
 
