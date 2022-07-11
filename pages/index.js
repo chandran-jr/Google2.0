@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Avatar from '../Components/avatar';
+import {MicrophoneIcon, ViewGridIcon} from '@heroicons/react/solid';
 
 export default function Home() {
   return (
@@ -24,6 +25,8 @@ export default function Home() {
       <div className='flex space-x-4 items-center'>
         <p className="link">Gmail</p>
         <p className="link">Images</p>
+
+        <ViewGridIcon className="h-10 w-10 p-2"/>
 
         <Avatar url="https://github.com/chandran-jr.png" />
       </div>
