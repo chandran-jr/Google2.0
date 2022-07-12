@@ -4,6 +4,7 @@ import {MicrophoneIcon, ViewGridIcon} from '@heroicons/react/solid';
 import {SearchIcon} from '@heroicons/react/outline';
 import Image from 'next/image';
 import Footer from '../Components/Footer';
+import Socialbutton from '../Components/Socialbutton';
 
 export default function Home() {
   return (
@@ -24,10 +25,15 @@ export default function Home() {
           <p className="link">Store</p>
       </div>
 
+      <div className='flex space-x-3 items-center'>
+        <Socialbutton text="Github" col="bg-gray-500" borderCol="border-black" url="https://github.com/chandran-jr" imgUrl="https://cdn-icons-png.flaticon.com/512/25/25231.png"/>
+        <Socialbutton text="Twitter" col="bg-blue-500" borderCol="border-blue-700" url="https://twitter.com/GovindChandran5" imgUrl="https://www.pngkey.com/png/full/2-27646_twitter-logo-png-transparent-background-logo-twitter-png.png"/>
+        <Socialbutton text="Instagram" col="bg-purple-500" borderCol="border-yellow-500" url="https://instagram.com/chandran.jr" imgUrl="http://assets.stickpng.com/images/580b57fcd9996e24bc43c521.png"/>
+        <Socialbutton text="WhatsApp" col="bg-green-400" borderCol="border-green-700" url="https://wa.me/+918330025649" imgUrl="http://assets.stickpng.com/images/580b57fcd9996e24bc43c543.png"/>
+      </div>
+
       {/*Right*/}
       <div className='flex space-x-4 items-center'>
-        <p className="link">Gmail</p>
-        <p className="link">Images</p>
 
         <ViewGridIcon className="h-10 w-10 p-2 rounded-full hover:bg-gray-100 cursor-pointer"/>
 
