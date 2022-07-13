@@ -4,6 +4,7 @@ import {useRouter} from 'next/router';
 import { useRef } from 'react';
 import {MicrophoneIcon, ViewGridIcon} from '@heroicons/react/solid';
 import Avatar from './avatar';
+import HeaderOptions from './HeaderOptions';
 
 function HeaderSearch() {
 
@@ -38,6 +39,8 @@ function HeaderSearch() {
 
 <Avatar className="ml-auto" url="https://github.com/chandran-jr.png" />
     </div>
+
+    <HeaderOptions/>
     
     </header>
   )
